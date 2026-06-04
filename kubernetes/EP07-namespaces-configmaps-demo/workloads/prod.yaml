@@ -1,0 +1,65 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+  namespace: prod
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+      env: prod
+  template:
+    metadata:
+      labels:
+        app: frontend
+        env: prod
+    spec:
+      containers:
+      - name: frontend
+        image: nginx
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+  namespace: prod
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+      env: prod
+  template:
+    metadata:
+      labels:
+        app: backend
+        env: prod
+    spec:
+      containers:
+      - name: backend
+        image: httpd
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: database
+  namespace: prod
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: database
+      env: prod
+  template:
+    metadata:
+      labels:
+        app: database
+        env: prod
+    spec:
+      containers:
+      - name: database
+        image: postgres
+        env:
+        - name: POSTGRES_PASSWORD
+          value: "demo"

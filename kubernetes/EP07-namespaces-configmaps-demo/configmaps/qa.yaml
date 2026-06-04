@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: qa
+data:
+  ENVIRONMENT: "qa"
+  API_URL: "qa-api.company.com"
+  DATABASE_HOST: "qa-db.company.com"

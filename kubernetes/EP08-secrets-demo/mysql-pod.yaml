@@ -1,0 +1,27 @@
+# Source Code:
+# https://github.com/dalita/devops-basics-with-dali
+
+apiVersion: v1
+kind: Pod
+
+metadata:
+  name: mysql
+
+  labels:
+    app: mysql
+
+spec:
+  containers:
+  - name: mysql
+
+    image: mysql:8.0
+
+    env:
+    - name: MYSQL_ROOT_PASSWORD
+      valueFrom:
+        secretKeyRef:
+          name: db-secret
+          key: MYSQL_PASSWORD
+
+    ports:
+    - containerPort: 3306

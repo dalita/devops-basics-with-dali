@@ -1,3 +1,5 @@
+# DevOps Basics with Dali
+
 Welcome to the official repository for the DevOps Basics with Dali YouTube channel.
 
 This repository contains all source code, Kubernetes manifests, Docker projects, and cloud examples used throughout the series.
@@ -12,6 +14,7 @@ This repository contains all source code, Kubernetes manifests, Docker projects,
 - EP04 - Docker Volumes
 - EP05 - Docker Networks
 - EP06 - Docker Compose
+- EP09 - Docker Logs and Debugging
 
 ## Kubernetes for Beginners
 
@@ -19,6 +22,23 @@ This repository contains all source code, Kubernetes manifests, Docker projects,
 - EP02 - Kubernetes Architecture
 - EP03 - Install Kubernetes Locally
 - EP04 - Your First Pod
+- EP05 - Deployments and ReplicaSets
+- EP06 - Services and Networking
+- EP07 - Namespaces and ConfigMaps
+- EP08 - Secrets and Environment Variables
+- EP09 - Volumes and Persistent Storage
+
+# Available Hands-On Labs
+
+## Docker
+
+- EP02 - Your First Dockerfile
+- EP06 - Docker Compose
+- EP09 - Docker Logs and Debugging
+
+## Kubernetes
+
+- EP03 - Install Kubernetes Locally
 - EP05 - Deployments and ReplicaSets
 - EP06 - Services and Networking
 - EP07 - Namespaces and ConfigMaps

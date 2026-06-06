@@ -45,20 +45,6 @@ This repository contains all source code, Kubernetes manifests, Docker projects,
 - EP08 - Secrets and Environment Variables
 - EP09 - Volumes and Persistent Storage
 
-# Repository Structure
-
-docker/
-├── EP02-dockerfile-demo
-├── EP06-docker-compose-demo
-└── EP09-docker-debug-demo
-
-kubernetes/
-├── EP04-kubernetes-yaml-demo
-├── EP05-deployments-demo
-├── EP06-services-demo
-├── EP07-namespaces-configmaps-demo
-├── EP08-secrets-demo
-└── EP09-k8s-volumes-demo
 
 # Goal
 

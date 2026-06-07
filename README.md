@@ -27,6 +27,7 @@ This repository contains all source code, Kubernetes manifests, Docker projects,
 - EP07 - Namespaces and ConfigMaps
 - EP08 - Secrets and Environment Variables
 - EP09 - Volumes and Persistent Storage
+- EP10 - Ingress and Load Balancers
 
 # Available Hands-On Labs
 
@@ -44,7 +45,23 @@ This repository contains all source code, Kubernetes manifests, Docker projects,
 - EP07 - Namespaces and ConfigMaps
 - EP08 - Secrets and Environment Variables
 - EP09 - Volumes and Persistent Storage
+- EP10 - Ingress and Load Balancers
 
+# Repository Structure
+
+docker/
+├── EP02-dockerfile-demo
+├── EP06-docker-compose-demo
+└── EP09-docker-debug-demo
+
+kubernetes/
+├── EP04-kubernetes-yaml-demo
+├── EP05-deployments-demo
+├── EP06-services-demo
+├── EP07-namespaces-configmaps-demo
+├── EP08-secrets-demo
+├── EP09-k8s-volumes-demo
+└── EP10-ingress-demo
 
 # Goal
 
@@ -56,11 +73,15 @@ DevOps Basics with Dali
 
 # Coming Next
 
-EP10 - Ingress and Load Balancers
+## EP11 - Helm for Beginners
 
 Topics:
 
-- Exposing Applications
-- NGINX Ingress Controller
-- Routing
-- TLS / HTTPS
+- What is Helm?
+- Helm Charts
+- Values Files
+- Installing Applications
+- Upgrading Releases
+- Rollbacks
+- Helm Best Practices
+- Real-World Kubernetes Deployments

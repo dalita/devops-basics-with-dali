@@ -29,6 +29,7 @@ This repository contains all source code, Kubernetes manifests, Docker projects,
 * EP09 - Volumes and Persistent Storage
 * EP10 - Ingress and Load Balancers
 * EP11 - Helm for Beginners
+* EP12 - Kubernetes Debugging
 
 # Available Hands-On Labs
 
@@ -47,6 +48,7 @@ This repository contains all source code, Kubernetes manifests, Docker projects,
 * EP08 - Secrets and Environment Variables
 * EP09 - Volumes and Persistent Storage
 * EP10 - Ingress and Load Balancers
+* EP12 - Kubernetes Debugging
 
 
 # Goal
@@ -59,14 +61,15 @@ DevOps Basics with Dali
 
 # Coming Next
 
-## EP12 - Kubernetes Debugging
+## EP13 - Real World Application on Kubernetes
 
 Topics:
 
-* kubectl logs
-* kubectl describe
-* Kubernetes Events
-* CrashLoopBackOff
-* ImagePullBackOff
-* Troubleshooting Pods
-* Real-World Debugging Techniques
+* Node.js Application
+* ConfigMap
+* Secret
+* Persistent Storage
+* Service
+* Ingress
+* End-to-End Deployment
+* Real-World Kubernetes Architecture

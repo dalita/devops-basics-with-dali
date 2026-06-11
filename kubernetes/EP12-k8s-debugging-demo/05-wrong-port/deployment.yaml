@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: wrong-port-demo
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: wrong-port-demo
+
+  template:
+    metadata:
+      labels:
+        app: wrong-port-demo
+
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+
+        ports:
+        - containerPort: 80

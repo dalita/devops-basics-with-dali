@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+
+metadata:
+  name: marauder-config
+
+data:
+  DATABASE_HOST: hogwarts-library-service
+  DATABASE_NAME: appdb
+  DATABASE_PORT: "5432"

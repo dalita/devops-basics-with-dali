@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: ministry-api
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: ministry-api
+
+  template:
+    metadata:
+      labels:
+        app: ministry-api
+
+    spec:
+      containers:
+      - name: ministry-api
+
+        image: mendhak/http-https-echo:35
+
+        ports:
+        - containerPort: 8080
+
+        envFrom:
+        - configMapRef:
+            name: marauder-config

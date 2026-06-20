@@ -32,6 +32,7 @@ Kubernetes for Beginners
 * EP12 - Kubernetes Debugging
 * EP13 - Real-World Application on Kubernetes
 * EP14 - Kubernetes Best Practices
+* EP15 - Convert Our Application into a Helm Chart
 
 Available Hands-On Labs
 
@@ -53,6 +54,7 @@ Kubernetes
 * EP12 - Kubernetes Debugging
 * EP13 - Real-World Application on Kubernetes
 * EP14 - Kubernetes Best Practices
+* EP15 - Convert Our Application into a Helm Chart
 
 Featured Projects
 
@@ -60,7 +62,7 @@ Students Portal Application
 
 Full-stack application used throughout the Kubernetes series.
 
-Technology Stack:
+Technology Stack
 
 * React
 * Node.js
@@ -68,7 +70,7 @@ Technology Stack:
 * Kubernetes
 * Helm
 
-Repository:
+Repository
 
 devops-basics-students-portal
 
@@ -80,17 +82,27 @@ YouTube Channel
 
 DevOps Basics with Dali
 
-Coming Next
+Latest Episode
 
 EP15 - Convert Our Application into a Helm Chart
 
-Topics:
+Topics
 
-Hands-On Project:
+* Why Helm exists
+* Helm Chart structure
+* Chart.yaml
+* values.yaml
+* Templates
+* Helm Releases
+* Packaging Helm Charts
+* Publishing Helm Charts
+* GitHub as a Helm Chart repository
+
+Hands-On Project
 
 Convert the Students Portal application from EP13 into a reusable Helm Chart.
 
-We’ll package:
+Package and deploy:
 
 * Frontend
 * Backend
@@ -100,23 +112,28 @@ We’ll package:
 * Persistent Volumes
 * Ingress
 
-And deploy everything using:
+Using:
 
-helm install students-portal
+helm install students-portal ./students-portal
 
-Future Episode
+Package the chart:
+
+helm package students-portal
+
+Coming Next
 
 EP16 - EKS on AWS
 
-Topics:
+Topics
 
 * Managed Kubernetes
 * EKS Architecture
 * Node Groups
 * IAM Roles
 * kubectl Connection
+* Deploying Helm Charts to EKS
 
-Thumbnail Text:
+Thumbnail Text
 
 * EKS ON AWS
 * CLOUD KUBERNETES

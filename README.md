@@ -2,7 +2,9 @@ DevOps Basics with Dali
 
 Welcome to the official repository for the DevOps Basics with Dali YouTube channel.
 
-This repository contains all source code, Kubernetes manifests, Docker projects, and cloud examples used throughout the series.
+This repository contains all source code, Kubernetes manifests, Docker projects, Helm charts, and AWS cloud examples used throughout the series.
+
+⸻
 
 Playlists
 
@@ -15,6 +17,8 @@ Docker for Beginners
 * EP05 - Docker Networks
 * EP06 - Docker Compose
 * EP09 - Docker Logs and Debugging
+
+⸻
 
 Kubernetes for Beginners
 
@@ -33,6 +37,9 @@ Kubernetes for Beginners
 * EP13 - Real-World Application on Kubernetes
 * EP14 - Kubernetes Best Practices
 * EP15 - Convert Our Application into a Helm Chart
+* EP16 - Amazon EKS on AWS
+
+⸻
 
 Available Hands-On Labs
 
@@ -56,84 +63,163 @@ Kubernetes
 * EP14 - Kubernetes Best Practices
 * EP15 - Convert Our Application into a Helm Chart
 
-Featured Projects
+⸻
+
+Featured Project
 
 Students Portal Application
 
-Full-stack application used throughout the Kubernetes series.
+A full-stack application used throughout the Kubernetes series.
 
 Technology Stack
 
 * React
 * Node.js
 * PostgreSQL
+* Docker
 * Kubernetes
 * Helm
+* Amazon EKS
 
 Repository
 
 devops-basics-students-portal
 
+⸻
+
 Goal
 
-Learn DevOps through practical, real-world examples.
+Learn modern DevOps through practical, real-world projects.
+
+This repository follows a complete learning path from Docker fundamentals to Kubernetes, Helm, and Amazon EKS, helping you build the skills needed to deploy cloud-native applications in production environments.
+
+⸻
 
 YouTube Channel
 
 DevOps Basics with Dali
 
+⸻
+
 Latest Episode
 
-EP15 - Convert Our Application into a Helm Chart
+EP16 - Amazon EKS on AWS
 
-Topics
+In this episode, we take everything we’ve learned throughout the Kubernetes series and deploy it to Amazon EKS.
 
-* Why Helm exists
-* Helm Chart structure
-* Chart.yaml
-* values.yaml
-* Templates
-* Helm Releases
-* Packaging Helm Charts
-* Publishing Helm Charts
-* GitHub as a Helm Chart repository
+Topics Covered
+
+* Amazon EKS Overview
+* Managed Kubernetes
+* EKS Architecture
+* Control Plane vs Worker Nodes
+* Node Groups
+* IAM Roles
+* VPC Networking
+* kubectl Configuration
+* Deploying Kubernetes Applications
+* High Availability
+* Auto Scaling
+* AWS Integrations
+* Differences Between Minikube and Amazon EKS
+
+⸻
 
 Hands-On Project
 
-Convert the Students Portal application from EP13 into a reusable Helm Chart.
+Deploy the Students Portal application to Amazon EKS.
 
-Package and deploy:
+You’ll learn how to:
 
-* Frontend
-* Backend
-* PostgreSQL
-* ConfigMaps
-* Secrets
-* Persistent Volumes
-* Ingress
+* Create an Amazon EKS cluster
+* Configure kubectl
+* Deploy Kubernetes manifests
+* Verify Pods and Services
+* Access the application
+* Understand how the same Kubernetes manifests work both locally and in AWS
 
-Using:
+⸻
 
-helm install students-portal ./students-portal
+Repository Structure
 
-Package the chart:
+docker/
+kubernetes/
+README.md
 
-helm package students-portal
+⸻
 
-Coming Next
+Prerequisites
 
-EP16 - EKS on AWS
+Before starting this repository, you should be familiar with:
 
-Topics
+* Basic Linux commands
+* Git
+* YAML
 
-* Managed Kubernetes
-* EKS Architecture
-* Node Groups
-* IAM Roles
-* kubectl Connection
-* Deploying Helm Charts to EKS
+For the Amazon EKS lab, you’ll also need:
 
-Thumbnail Text
+* An AWS Account
+* AWS CLI
+* kubectl
+* eksctl
 
-* EKS ON AWS
-* CLOUD KUBERNETES
+⸻
+
+Who Is This Repository For?
+
+This repository is designed for:
+
+* DevOps Beginners
+* Software Engineers
+* Cloud Engineers
+* Platform Engineers
+* System Administrators
+* Students preparing for AWS Certifications
+* Anyone who prefers learning by building real projects
+
+⸻
+
+Learning Methodology
+
+Every lesson follows the same approach:
+
+1. Understand the concept.
+2. Build it from scratch.
+3. Verify that it works.
+4. Learn how it is used in production.
+
+The focus is on practical experience with minimal theory.
+
+⸻
+
+What’s Next?
+
+The Docker for Beginners and Kubernetes for Beginners series are now complete.
+
+Future content on the channel will cover real-world DevOps topics, including:
+
+* Terraform
+* GitHub Actions
+* Jenkins
+* AWS Networking
+* IAM
+* Monitoring and Observability
+* Production Kubernetes
+* AWS Architecture
+* DevOps Interview Preparation
+
+⸻
+
+License
+
+This repository is intended for educational purposes.
+
+Feel free to fork it, experiment with the labs, and continue learning.
+
+⸻
+
+Connect
+
+📺 YouTube: DevOps Basics with Dali
+
+If you find these labs helpful, consider starring this repository and subscribing to the channel for more hands-on DevOps, Kubernetes, AWS, and Cloud Engineering content.

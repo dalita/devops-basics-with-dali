@@ -41,6 +41,20 @@ Kubernetes for Beginners
 
 ⸻
 
+Terraform for Beginners
+
+* EP01 - What is Terraform?
+* EP02 - Install Terraform
+* EP03 - Your First Terraform Project
+* EP04 - Providers
+* EP05 - Variables
+* EP06 - Terraform State
+* EP07 - Modules
+* EP08 - Deploy AWS Infrastructure
+
+⸻
+
+
 Available Hands-On Labs
 
 Docker
@@ -65,11 +79,21 @@ Kubernetes
 
 ⸻
 
+Terraform
+
+* EP02 - Install Terraform
+* EP03 - Your First Terraform Project
+* EP04 - Providers
+* EP05 - Variables
+* EP06 - Terraform State
+* EP07 - Modules
+* EP08 - Deploy AWS Infrastructure
+
 Featured Project
 
 Students Portal Application
 
-A full-stack application used throughout the Kubernetes series.
+A full-stack application used throughout the Kubernetes and Terraform series.
 
 Technology Stack
 
@@ -79,7 +103,9 @@ Technology Stack
 * Docker
 * Kubernetes
 * Helm
+* Terraform
 * Amazon EKS
+* AWS
 
 Repository
 
@@ -103,40 +129,39 @@ DevOps Basics with Dali
 
 Latest Episode
 
-EP16 - Amazon EKS on AWS
+EP01 - What is Terraform?
 
-In this episode, we take everything we’ve learned throughout the Kubernetes series and deploy it to Amazon EKS.
+In this episode, we introduce Terraform and the core concepts of Infrastructure as Code.
 
 Topics Covered
 
-* Amazon EKS Overview
-* Managed Kubernetes
-* EKS Architecture
-* Control Plane vs Worker Nodes
-* Node Groups
-* IAM Roles
-* VPC Networking
-* kubectl Configuration
-* Deploying Kubernetes Applications
-* High Availability
-* Auto Scaling
-* AWS Integrations
-* Differences Between Minikube and Amazon EKS
+* What is Terraform?
+* Infrastructure as Code (IaC)
+* Why Terraform?
+* Declarative vs Imperative
+* Terraform Workflow
+* Providers
+* Resources
+* Terraform State
 
 ⸻
 
 Hands-On Project
 
-Deploy the Students Portal application to Amazon EKS.
+Build AWS infrastructure with Terraform.
 
-You’ll learn how to:
+Throughout this series, you'll build a complete AWS environment for the Students Portal application.
 
-* Create an Amazon EKS cluster
-* Configure kubectl
-* Deploy Kubernetes manifests
-* Verify Pods and Services
-* Access the application
-* Understand how the same Kubernetes manifests work both locally and in AWS
+You'll learn how to:
+
+* Provision AWS infrastructure using Terraform
+* Build reusable Infrastructure as Code
+* Configure networking and security
+* Deploy compute resources
+* Manage Terraform State
+* Organize projects using Modules
+* Apply Infrastructure as Code best practices
+* Prepare your infrastructure for Kubernetes deployment
 
 ⸻
 
@@ -144,6 +169,7 @@ Repository Structure
 
 docker/
 kubernetes/
+terraform/
 README.md
 
 ⸻
@@ -183,22 +209,18 @@ Learning Methodology
 
 Every lesson follows the same approach:
 
-1. Understand the concept.
-2. Build it from scratch.
-3. Verify that it works.
-4. Learn how it is used in production.
+1. Read the official documentation.
+2. Understand the concept.
+3. Use AI to accelerate your work.
+4. Validate the results.
+5. Build it yourself.
 
-The focus is on practical experience with minimal theory.
+The goal is to use AI as an assistant—not as a replacement for learning or the official documentation.
 
 ⸻
 
-What’s Next?
-
-The Docker for Beginners and Kubernetes for Beginners series are now complete.
-
 Future content on the channel will cover real-world DevOps topics, including:
 
-* Terraform
 * GitHub Actions
 * Jenkins
 * AWS Networking

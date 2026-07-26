@@ -46,7 +46,7 @@ This repository contains all source code, Kubernetes manifests, Docker projects,
 - EP01 - What is Terraform?
 - EP02 - Install Terraform
 - EP03 - Your First Terraform Project
-- EP04 - Providers
+- EP04 - Resources and Dependencies
 - EP05 - Variables
 - EP06 - Terraform State
 - EP07 - Modules
@@ -80,6 +80,7 @@ This repository contains all source code, Kubernetes manifests, Docker projects,
 ## Terraform
 
 - EP02 - Install Terraform
+- EP03 - Your First Terraform Project
 
 ---
 
@@ -103,7 +104,7 @@ A full-stack application used throughout the Kubernetes and Terraform series.
 
 ### Repository
 
-```
+```text
 devops-basics-students-portal
 ```
 
@@ -125,21 +126,28 @@ This repository follows a complete learning path from Docker fundamentals to Kub
 
 # Latest Episode
 
-## EP02 - Install Terraform
+## EP03 - Your First Terraform Project
 
-In this episode, you'll prepare your development environment and get everything ready to start building Infrastructure as Code.
+In this episode, you'll build your first real Infrastructure as Code project using Terraform and AWS.
 
 ### Topics Covered
 
-- Install Terraform on macOS
-- Installation options for Windows and Linux
-- Verify the Terraform installation
-- Install the HashiCorp VS Code Extension
 - Create your first Terraform project
-- terraform version
+- Understand Terraform Providers
+- Explore the Terraform Registry
+- Configure the AWS Provider
+- Create an IAM User and Access Key
+- Launch an EC2 instance manually
+- Build the same EC2 instance with Terraform
+- terraform init
 - terraform fmt
 - terraform validate
-- Using the Official Documentation with AI
+- terraform plan
+- terraform apply
+- Update an existing resource
+- terraform destroy
+- AI-assisted troubleshooting
+- Infrastructure lifecycle with Terraform
 
 ---
 
@@ -164,7 +172,7 @@ You'll learn how to:
 
 # Repository Structure
 
-```
+```text
 docker/
 kubernetes/
 terraform/
@@ -181,10 +189,13 @@ Before starting this repository, you should be familiar with:
 - Git
 - YAML
 
-For the Amazon EKS lab, you'll also need:
+For the Terraform labs, you'll also need:
 
 - An AWS Account
 - AWS CLI
+
+For the Amazon EKS lab, you'll also need:
+
 - kubectl
 - eksctl
 

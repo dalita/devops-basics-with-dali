@@ -1,7 +1,8 @@
 provider "aws" {
   region     = "us-east-1"
+  access_key = "<YOUR_ACCESS_KEY>"
+  secret_key = "<YOUR_SECRET_KEY>"
 }
-
 resource "aws_instance" "ubuntu_server" {
   ami           = "ami-0b6d9d3d33ba97d99"
   instance_type = "t3.micro"

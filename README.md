@@ -1,8 +1,12 @@
 # DevOps Basics with Dali
 
-Welcome to the official repository for the **DevOps Basics with Dali** YouTube channel.
+Learn DevOps by building real projects.
 
-This repository contains all source code, Kubernetes manifests, Docker projects, Helm charts, Terraform configurations, and AWS cloud examples used throughout the series.
+This repository contains all the source code used throughout the **DevOps Basics with Dali** YouTube series, covering Docker, Kubernetes, Terraform, Helm, and AWS through hands-on, production-inspired examples.
+
+Every lesson follows the same workflow:
+
+📖 Official Documentation → 💡 Understand → 🤖 Use AI → ✅ Validate → 🚀 Deploy
 
 ---
 
@@ -47,10 +51,17 @@ This repository contains all source code, Kubernetes manifests, Docker projects,
 - EP02 - Install Terraform
 - EP03 - Your First Terraform Project
 - EP04 - Resources and Dependencies
-- EP05 - Variables
-- EP06 - Terraform State
-- EP07 - Modules
-- EP08 - Deploy AWS Infrastructure
+- EP05 - Variables & Outputs
+- EP06 - Data Sources
+- EP07 - Terraform State
+- EP08 - Modules
+- EP09 - Build an AWS VPC
+- EP10 - Launch an EC2 Instance
+- EP11 - Deploy an Amazon RDS Database
+- EP12 - IAM with Terraform
+- EP13 - Amazon EKS with Terraform
+- EP14 - CI/CD with Terraform
+- EP15 - Students Portal on AWS
 
 ---
 
@@ -81,6 +92,8 @@ This repository contains all source code, Kubernetes manifests, Docker projects,
 
 - EP02 - Install Terraform
 - EP03 - Your First Terraform Project
+- EP04 - Resources and Dependencies
+- EP05 - Variables & Outputs
 
 ---
 
@@ -126,47 +139,91 @@ This repository follows a complete learning path from Docker fundamentals to Kub
 
 # Latest Episode
 
-## EP03 - Your First Terraform Project
+## EP05 - Variables & Outputs
 
-In this episode, you'll build your first real Infrastructure as Code project using Terraform and AWS.
+In this episode, you'll learn how to make your Terraform configurations reusable using Input Variables, tfvars files, and Outputs.
 
 ### Topics Covered
 
-- Create your first Terraform project
-- Understand Terraform Providers
-- Explore the Terraform Registry
-- Configure the AWS Provider
-- Create an IAM User and Access Key
-- Launch an EC2 instance manually
-- Build the same EC2 instance with Terraform
-- terraform init
-- terraform fmt
-- terraform validate
+- Input Variables
+- Variable Types (Introduction)
+- Default Values
+- variables.tf
+- terraform.tfvars
+- outputs.tf
+- terraform output
+- Replace hardcoded values
+- Use the official Terraform documentation
+- Use AI to generate practical examples
+- Deploy reusable infrastructure
+- terraform destroy
+
+---
+
+# Previous Episode
+
+## EP04 - Resources and Dependencies
+
+In this episode, you'll learn how Terraform manages relationships between resources using its dependency graph.
+
+### Topics Covered
+
+- Resource Blocks
+- Resource Arguments
+- Creating Multiple Resources
+- Resource References
+- Implicit Dependencies
+- Explicit Dependencies
+- depends_on
+- Terraform Dependency Graph
+- terraform graph
+- Graphviz
 - terraform plan
 - terraform apply
-- Update an existing resource
-- terraform destroy
-- AI-assisted troubleshooting
-- Infrastructure lifecycle with Terraform
+- Updating Existing Resources
+## Commands Used
 
+### Install Graphviz (macOS)
+```bash
+brew install graphviz
+```
+### Verify the installation
+```bash
+dot -V
+```
+### Generate the Terraform dependency graph
+```bash
+terraform graph
+```
+### Export the graph as a PNG image
+```bash
+terraform graph | dot -Tpng > graph.png
+```
+
+### Open the generated image (macOS)
+```bash
+open graph.png
+```
+## Official Documentation
+- Terraform Graph: https://developer.hashicorp.com/terraform/cli/commands/graph
+- Graphviz: https://graphviz.org/
 ---
 
 # Hands-On Project
 
-Build AWS infrastructure with Terraform.
+Build reusable AWS infrastructure with Terraform.
 
-Throughout this series, you'll build a complete AWS environment for the Students Portal application.
+Throughout this series, you'll progressively build production-style Infrastructure as Code by learning how to:
 
-You'll learn how to:
-
-- Provision AWS infrastructure using Terraform
-- Build reusable Infrastructure as Code
-- Configure networking and security
-- Deploy compute resources
-- Manage Terraform State
+- Create reusable Terraform configurations
+- Separate code from configuration
+- Manage multiple environments
+- Read existing AWS resources
+- Build networking infrastructure
+- Deploy EC2 and RDS
 - Organize projects using Modules
+- Prepare infrastructure for Amazon EKS
 - Apply Infrastructure as Code best practices
-- Prepare your infrastructure for Kubernetes deployment
 
 ---
 
@@ -178,7 +235,6 @@ kubernetes/
 terraform/
 README.md
 ```
-
 ---
 
 # Prerequisites
@@ -194,7 +250,7 @@ For the Terraform labs, you'll also need:
 - An AWS Account
 - AWS CLI
 
-For the Amazon EKS lab, you'll also need:
+For the Amazon EKS labs, you'll also need:
 
 - kubectl
 - eksctl
@@ -221,7 +277,7 @@ Every lesson follows the same approach:
 
 1. Read the official documentation.
 2. Understand the concept.
-3. Use AI to accelerate your work.
+3. Use AI to accelerate your learning.
 4. Validate against the official documentation.
 5. Build it yourself.
 
@@ -235,12 +291,15 @@ Future content on the channel will cover real-world DevOps topics, including:
 
 - GitHub Actions
 - Jenkins
+- Argo CD
+- Crossplane
 - AWS Networking
 - IAM
 - Monitoring and Observability
 - Production Kubernetes
 - AWS Architecture
 - DevOps Interview Preparation
+- Platform Engineering
 
 ---
 

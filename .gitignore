@@ -1,36 +1,44 @@
+# ==========================
 # macOS
+# ==========================
 .DS_Store
 
-# Node
+# ==========================
+# IDEs
+# ==========================
+.vscode/
+.idea/
+
+# ==========================
+# Node.js
+# ==========================
 node_modules/
 
-# Env files
+# ==========================
+# Environment files
+# ==========================
 .env
 .env.*
 
+# ==========================
 # Logs
+# ==========================
 *.log
 
-# VS Code
-.vscode/
+# ==========================
+# Terraform
+# ==========================
 
-# JetBrains
-.idea/
-# Terraform working directory
+# Working directory
 .terraform/
 
-# Terraform state
+# Lock file
+# Keep this file committed so everyone uses the same provider versions.
+#! .terraform.lock.hcl
+
+# State files
 *.tfstate
 *.tfstate.*
-
-# Terraform backup
-*.backup
-
-# Variable files
-terraform.tfvars
-terraform.tfvars.json
-*.auto.tfvars
-*.auto.tfvars.json
 
 # Crash logs
 crash.log
@@ -44,3 +52,19 @@ override.tf.json
 # CLI configuration
 .terraformrc
 terraform.rc
+
+# Variable files (may contain secrets)
+terraform.tfvars
+terraform.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Plan files
+*.tfplan
+plan.out
+
+# Sensitive key files
+*.pem
+*.key
+id_rsa
+id_rsa.pub

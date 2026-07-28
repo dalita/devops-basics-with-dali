@@ -57,7 +57,7 @@ Every lesson follows the same workflow:
 - EP08 - Terraform State
 - EP09 - Modules
 - EP10 - Build an AWS VPC
-- EP11 - Launch an EC2 Instance
+- EP11 - Production EC2 (User Data, Key Pair, EBS, Tags)
 - EP12 - Deploy an Amazon RDS Database
 - EP13 - IAM with Terraform
 - EP14 - Amazon EKS with Terraform

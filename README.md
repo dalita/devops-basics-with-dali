@@ -53,14 +53,14 @@ Every lesson follows the same workflow:
 - EP04 - Resources and Dependencies
 - EP05 - Variables & Outputs
 - EP06 - Data Sources
-- EP07 - Terraform State
-- EP08 - Modules
-- EP09 - Build an AWS VPC
-- EP10 - Launch an EC2 Instance
-- EP11 - Deploy an Amazon RDS Database
-- EP12 - IAM with Terraform
-- EP13 - Amazon EKS with Terraform
-- EP14 - CI/CD with Terraform
+- EP07 - Expressions & Functions
+- EP08 - Terraform State
+- EP09 - Modules
+- EP10 - Build an AWS VPC
+- EP11 - Launch an EC2 Instance
+- EP12 - Deploy an Amazon RDS Database
+- EP13 - IAM with Terraform
+- EP14 - Amazon EKS with Terraform
 - EP15 - Students Portal on AWS
 
 ---
@@ -94,6 +94,7 @@ Every lesson follows the same workflow:
 - EP03 - Your First Terraform Project
 - EP04 - Resources and Dependencies
 - EP05 - Variables & Outputs
+- EP06 - Data Sources
 
 ---
 
@@ -139,6 +140,38 @@ This repository follows a complete learning path from Docker fundamentals to Kub
 
 # Latest Episode
 
+## EP06 - Data Sources
+
+In this episode, you'll learn how to use Terraform Data Sources to read existing AWS resources instead of hardcoding values.
+
+### Topics Covered
+
+- What are Data Sources?
+- Why use Data Sources?
+- Explore the Official Terraform Documentation
+- Create your first `aws_ami` Data Source
+- Read the latest Amazon Linux AMI
+- Replace a hardcoded AMI ID
+- Update an EC2 resource using a Data Source
+- terraform fmt
+- terraform validate
+- terraform init
+- terraform plan
+- terraform apply
+- terraform output
+- Verify the deployment in AWS
+- Use AI to identify Data Source opportunities
+- terraform destroy
+
+### Official Documentation
+
+- Terraform Data Sources
+- AWS Provider - aws_ami Data Source
+
+---
+
+# Previous Episode
+
 ## EP05 - Variables & Outputs
 
 In this episode, you'll learn how to make your Terraform configurations reusable using Input Variables, tfvars files, and Outputs.
@@ -158,55 +191,6 @@ In this episode, you'll learn how to make your Terraform configurations reusable
 - Deploy reusable infrastructure
 - terraform destroy
 
----
-
-# Previous Episode
-
-## EP04 - Resources and Dependencies
-
-In this episode, you'll learn how Terraform manages relationships between resources using its dependency graph.
-
-### Topics Covered
-
-- Resource Blocks
-- Resource Arguments
-- Creating Multiple Resources
-- Resource References
-- Implicit Dependencies
-- Explicit Dependencies
-- depends_on
-- Terraform Dependency Graph
-- terraform graph
-- Graphviz
-- terraform plan
-- terraform apply
-- Updating Existing Resources
-## Commands Used
-
-### Install Graphviz (macOS)
-```bash
-brew install graphviz
-```
-### Verify the installation
-```bash
-dot -V
-```
-### Generate the Terraform dependency graph
-```bash
-terraform graph
-```
-### Export the graph as a PNG image
-```bash
-terraform graph | dot -Tpng > graph.png
-```
-
-### Open the generated image (macOS)
-```bash
-open graph.png
-```
-## Official Documentation
-- Terraform Graph: https://developer.hashicorp.com/terraform/cli/commands/graph
-- Graphviz: https://graphviz.org/
 ---
 
 # Hands-On Project
@@ -235,6 +219,7 @@ kubernetes/
 terraform/
 README.md
 ```
+
 ---
 
 # Prerequisites

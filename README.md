@@ -95,6 +95,7 @@ Every lesson follows the same workflow:
 - EP04 - Resources and Dependencies
 - EP05 - Variables & Outputs
 - EP06 - Data Sources
+- EP07 - Expressions & Functions
 
 ---
 
@@ -140,56 +141,60 @@ This repository follows a complete learning path from Docker fundamentals to Kub
 
 # Latest Episode
 
-## EP06 - Data Sources
+## EP07 - Expressions & Functions
 
-In this episode, you'll learn how to use Terraform Data Sources to read existing AWS resources instead of hardcoding values.
+In this episode, you'll learn how to write cleaner, smarter, and more scalable Terraform configurations using Expressions, Functions, count, for_each, and locals.
 
 ### Topics Covered
 
-- What are Data Sources?
-- Why use Data Sources?
-- Explore the Official Terraform Documentation
-- Create your first `aws_ami` Data Source
-- Read the latest Amazon Linux AMI
-- Replace a hardcoded AMI ID
-- Update an EC2 resource using a Data Source
+- Terraform Expressions
+- String Interpolation
+- Built-in Functions
+- Conditional Expressions
+- count
+- count.index
+- for_each
+- each.key
+- each.value
+- locals
+- merge()
+- Create multiple EC2 instances
+- Refactor duplicated code
+- AI-assisted troubleshooting
 - terraform fmt
 - terraform validate
-- terraform init
 - terraform plan
 - terraform apply
-- terraform output
-- Verify the deployment in AWS
-- Use AI to identify Data Source opportunities
 - terraform destroy
 
 ### Official Documentation
 
-- Terraform Data Sources
-- AWS Provider - aws_ami Data Source
+- Terraform Expressions
+- Terraform Functions
+- Terraform Conditional Expressions
+- Terraform count
+- Terraform for_each
+- Terraform locals
 
 ---
 
-# Previous Episode
 
-## EP05 - Variables & Outputs
+# Next Episode
 
-In this episode, you'll learn how to make your Terraform configurations reusable using Input Variables, tfvars files, and Outputs.
+## EP08 - Terraform State
+
+In the next episode, we'll explore one of Terraform's most important concepts: Terraform State.
 
 ### Topics Covered
 
-- Input Variables
-- Variable Types (Introduction)
-- Default Values
-- variables.tf
-- terraform.tfvars
-- outputs.tf
-- terraform output
-- Replace hardcoded values
-- Use the official Terraform documentation
-- Use AI to generate practical examples
-- Deploy reusable infrastructure
-- terraform destroy
+- What is `terraform.tfstate`?
+- Why Terraform needs State
+- Inspect the State file
+- Drift Detection
+- Import Existing Resources
+- Move State
+- Remove Resources from State
+- State Locking
 
 ---
 
@@ -262,7 +267,7 @@ Every lesson follows the same approach:
 
 1. Read the official documentation.
 2. Understand the concept.
-3. Use AI to accelerate your learning.
+3. Use AI to accelerate the work.
 4. Validate against the official documentation.
 5. Build it yourself.
 

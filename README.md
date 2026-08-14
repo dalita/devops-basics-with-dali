@@ -55,8 +55,8 @@ Every lesson follows the same workflow:
 - EP06 - Data Sources
 - EP07 - Expressions & Functions
 - EP08 - Terraform State
-- EP09 - Modules
-- EP10 - Build an AWS VPC
+- EP09 - Build an AWS VPC
+- EP10 - Terraform Modules
 - EP11 - Production EC2 (User Data, Key Pair, EBS, Tags)
 - EP12 - Deploy an Amazon RDS Database
 - EP13 - IAM with Terraform
@@ -96,6 +96,7 @@ Every lesson follows the same workflow:
 - EP05 - Variables & Outputs
 - EP06 - Data Sources
 - EP07 - Expressions & Functions
+- EP08 - Terraform State
 
 ---
 
@@ -141,60 +142,57 @@ This repository follows a complete learning path from Docker fundamentals to Kub
 
 # Latest Episode
 
-## EP07 - Expressions & Functions
+## EP08 - Terraform State
 
-In this episode, you'll learn how to write cleaner, smarter, and more scalable Terraform configurations using Expressions, Functions, count, for_each, and locals.
+In this episode, you'll learn one of the most important concepts in Terraform: the State file.
+
+You'll understand how Terraform keeps track of your infrastructure, how it maps your configuration to real AWS resources, and how to safely manipulate the State using the Terraform CLI.
+
+Through several hands-on demonstrations, you'll import existing AWS resources, rename Terraform resources without recreating infrastructure, remove resources from the State, and understand why Terraform State is the bridge between your code and your cloud infrastructure.
 
 ### Topics Covered
 
-- Terraform Expressions
-- String Interpolation
-- Built-in Functions
-- Conditional Expressions
-- count
-- count.index
-- for_each
-- each.key
-- each.value
-- locals
-- merge()
-- Create multiple EC2 instances
-- Refactor duplicated code
-- AI-assisted troubleshooting
-- terraform fmt
-- terraform validate
-- terraform plan
-- terraform apply
-- terraform destroy
+- What is Terraform State?
+- Understanding terraform.tfstate
+- Inspecting the State file
+- Drift Detection
+- terraform state list
+- terraform state show
+- terraform state mv
+- terraform import
+- terraform state rm
+- Import existing AWS resources
+- Rename Terraform resources safely
+- Configuration vs State vs AWS
+- Why Terraform wants to recreate infrastructure
+- AI-assisted Terraform code review
+- Terraform State best practices
 
 ### Official Documentation
 
-- Terraform Expressions
-- Terraform Functions
-- Terraform Conditional Expressions
-- Terraform count
-- Terraform for_each
-- Terraform locals
+- Terraform State
+- Terraform Import
+- Terraform State Commands
 
 ---
 
-
 # Next Episode
 
-## EP08 - Terraform State
+## EP09 - Build an AWS VPC
 
-In the next episode, we'll explore one of Terraform's most important concepts: Terraform State.
+In the next episode, we'll stop relying on the default AWS networking and build a production-style AWS network from scratch using Terraform.
 
 ### Topics Covered
 
-- What is `terraform.tfstate`?
-- Why Terraform needs State
-- Inspect the State file
-- Drift Detection
-- Import Existing Resources
-- Move State
-- Remove Resources from State
-- State Locking
+- What is a VPC?
+- CIDR Blocks
+- Public vs Private Subnets
+- Internet Gateway
+- Route Tables
+- Route Table Associations
+- Security Groups
+- Building a production-style AWS network
+- Preparing the networking foundation for future Terraform projects
 
 ---
 
